@@ -1,5 +1,10 @@
 import path from 'path'
 import { Marp } from '@marp-team/marp-core'
+import markdownItContainer from 'markdown-it-container'
+import markdownItDiv from 'markdown-it-div'
+import markdownItFootnote from 'markdown-it-footnote'
+import markdownItIns from 'markdown-it-ins'
+import markdownItMark from 'markdown-it-mark'
 import { ExtensionContext, Uri, commands, workspace } from 'vscode'
 import * as exportCommand from './commands/export'
 import * as openExtensionSettings from './commands/open-extension-settings'
@@ -51,6 +56,11 @@ export function extendMarkdownIt(md: any) {
         .use(customTheme)
         .use(outline)
         .use(lineNumber)
+        .use(markdownItContainer)
+        .use(markdownItDiv)
+        .use(markdownItFootnote)
+        .use(markdownItIns)
+        .use(markdownItMark)
 
       // Load custom themes
       Promise.all(
