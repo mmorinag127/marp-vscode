@@ -269,6 +269,11 @@
   "dependencies": {
     "@marp-team/marp-cli": "file:../marp-cli/marp-team-marp-cli-v0.23.3.tgz",
     "@marp-team/marp-core": "file:../marp-core/marp-team-marp-core-v1.4.3.tgz",
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "markdown-it-container": "^3.0.0",
+    "markdown-it-div": "^1.1.0",
+    "markdown-it-footnote": "^3.0.2",
+    "markdown-it-ins": "^3.0.1",
+    "markdown-it-mark": "^3.0.1"
   }
 }
